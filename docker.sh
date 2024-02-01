@@ -7,7 +7,7 @@ docker pull rocker/rstudio:4.3.1
 docker run --rm -p 8686:8787 
 -v /data/lizeluan/project:/home/rstudio/r-docker-tutorial \
 -e USERID=$(id -u) -e GROUPID=$(id -g) \
--e PASSWORD=986532 \
+-e PASSWORD=$password \
 --privileged=true rocker/rstudio:4.3.1
 
 
