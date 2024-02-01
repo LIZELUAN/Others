@@ -10,6 +10,7 @@ docker run --rm -p 8686:8787
 -v /data/lizeluan/R/library:/home/rstudio/R/library \
 -e USERID=$(id -u) -e GROUPID=$(id -g) \
 -e PASSWORD=$password \
+-e LD_LIBRARY_PATH=/home/rstudio/R/library \
 --privileged=true rocker/rstudio:4.3.1
 
 
