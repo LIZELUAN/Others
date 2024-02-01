@@ -11,8 +11,7 @@ rocker/rstudio:4.3.1
 docker run -d --rm \
 -p 8888:8787 \
 -e PASSWORD=xxxxxx \
--v /data/lizeluan/rstudio:/data/lizeluan/rstudio/ \
-
+-v /data/lizeluan/rstudio:/data/lizeluan/rstudio \
 rocker/rstudio:4.3.1
 
 
