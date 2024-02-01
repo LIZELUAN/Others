@@ -6,7 +6,7 @@ docker pull rocker/rstudio:4.3.1
 # Run container, and Rstudio can be assessed by http://localhost:8888
 docker run --rm -p 8686:8787 \
 -e PASSWORD=$password \
--v /data/lizeluan/rstudio:/home/rstudio/r-docker-tutorial \
+-v /data/lizeluan/project:/home/rstudio/r-docker-tutorial \
 rocker/rstudio:4.3.1
 
 
