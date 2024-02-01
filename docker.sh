@@ -16,3 +16,4 @@ docker run --rm -p 8686:8787
 
 
 # open the broswer and login with username "rstudio" and password "123456", and that's it!
+# docker stop rstudio
