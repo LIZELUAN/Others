@@ -4,10 +4,11 @@ password=123456
 docker pull rocker/rstudio:4.3.1
 
 # Run container, and Rstudio can be assessed by http://localhost:8888
-docker run --rm -p 8686:8787 \
--e PASSWORD=$password \
+docker run --rm -p 8686:8787 
 -v /data/lizeluan/project:/home/rstudio/r-docker-tutorial \
-rocker/rstudio:4.3.1
+-e USERID=$(id -u) -e GROUPID=$(id -g) \
+-e PASSWORD=986532 \
+--privileged=true rocker/rstudio:4.3.1
 
 
 
