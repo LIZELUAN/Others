@@ -1,2 +1,2 @@
 # Others
-Some practice on docker or pytorch
+Some practice on docker or pytorch (reference: tudui PyTorch)
